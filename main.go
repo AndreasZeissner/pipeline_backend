@@ -9,13 +9,16 @@ import (
     Id int64 `db:"id" json:"id"`
     Firstname string `db:"firstname" json:"firstname"`
     Lastname string `db:"lastname" json:"lastname"`
-	Image string `db:"image" json:"image"`
+    Image string `db:"image" json:"image"`
   }
 
+type Users struct {
+	Collection []User
+}
   func main() {
 	 router := gin.Default()
 	 router.GET("/index", func(c *gin.Context) {
-		type Users []User
+		 type Users []User
 	    var users = Users{
 			User{Id: 1, Firstname: "Peter", Lastname: "Braun", Image: "https://fiw.fhws.de/fileadmin/_processed_/csm_Braun_DSC6980_RGB_b6d7988bbc.jpg"},
 			User{Id: 2, Firstname: "Alfredo", Lastname: "Isabel", Image: "https://fiw.fhws.de/fileadmin/_processed_/csm_John_IMG4076_RGB_d3bffb5d6e.jpg"},
