@@ -25,6 +25,7 @@ type Users struct {
 			User{Id: 2, Firstname: "Isabel", Lastname: "John", Image: "https://fiw.fhws.de/fileadmin/_processed_/csm_John_IMG4076_RGB_d3bffb5d6e.jpg"},
 			User{Id: 3, Firstname: "Eberhard", Lastname: "Grötsch", Image: "https://fiw.fhws.de/fileadmin/_processed_/csm_Groetsch_IMG5513_RGB_d9bc5b45b4.jpg"},
 			User{Id: 4, Firstname: "Klaus", Lastname: "Junker-Schilling", Image: "https://fiw.fhws.de/fileadmin/_processed_/csm_Junker-Schilling_IMG5093_RGB_2fc6b9361d.jpg"},
+			User{Id: 5, Firstname: "Michael", Lastname: "Müßig", Image: "https://fiw.fhws.de/fileadmin/_processed_/csm_Muessig_IMG9416_RGB_59fb7e0f6e.jpg"},
 		}
 		c.JSON(http.StatusOK, users)
 	 })
